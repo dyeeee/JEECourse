@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<center>
+<br>
+<br>
+    <!-- 这样写和下面点提交的请求一样 -->
+    <!-- <a href="./login?user=tom&pass=jerry">another way to login</a> -->
+ <br>
+    <!-- action是执行login这个Servlet -->
+         <form action="./login" method="POST">  <!-- 用什么Servlet,什么方法处理表单 -->
+            User:     <input type="text" name="user" VALUE="Admin_TOM"/>
+            Password: <input type="password" name="pass" VALUE="Jerry"/>
+            <input type="submit" />
+        </form>
+    </center>
+
+</body>
+</html>
