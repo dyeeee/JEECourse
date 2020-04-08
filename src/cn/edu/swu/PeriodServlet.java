@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+
+//观察Servlet生命周期的Servlet
 public class PeriodServlet extends HttpServlet {
 
     @Override
