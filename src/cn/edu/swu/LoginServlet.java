@@ -47,13 +47,15 @@ public class LoginServlet extends HttpServlet {
             HttpSession session = request.getSession(true);
             session.setAttribute(LOGIN_FLAG, LOGIN_TOKEN);
 
-            response.sendRedirect("index.html");
+            //response.sendRedirect("index.html");
+            response.sendRedirect("./listBook");
 
         } else {
             System.out.println(user + password);
             //这时候这一句已经不显示了，因为重定向了
             writer.write("<h2 style='color:red'>Failed</h2>");
             System.out.println("Wrong username or password");
+
             response.sendRedirect("LoginIndex.html");
         }
     }

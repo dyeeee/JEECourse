@@ -74,6 +74,8 @@
     </servlet-mapping>
 
 
+
+
     <filter>
         <filter-name>LogFilter</filter-name>
         <filter-class>cn.edu.swu.LogFilter</filter-class>
@@ -87,6 +89,7 @@
         <filter-name>LogFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
 
     <filter>
         <filter-name>IPFilter</filter-name>
@@ -102,6 +105,7 @@
         <url-pattern>/admin/*</url-pattern>
     </filter-mapping>
 
+
     <filter>
         <filter-name>AccessFilter</filter-name>
         <filter-class>cn.edu.swu.AccessFilter</filter-class>
@@ -111,6 +115,70 @@
         <filter-name>AccessFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
+
+    <servlet>
+    <servlet-name>ListBookServlet</servlet-name>
+    <servlet-class>cn.edu.swu.book.ListBookServlet</servlet-class>
+</servlet>
+
+    <servlet-mapping>
+        <servlet-name>ListBookServlet</servlet-name>
+        <url-pattern>/listBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddBookServlet</servlet-name>
+        <servlet-class>cn.edu.swu.book.AddBookServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddBookServlet</servlet-name>
+        <url-pattern>/addBook</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>DeletBookServlet</servlet-name>
+        <servlet-class>cn.edu.swu.book.DeleteBookServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeletBookServlet</servlet-name>
+        <url-pattern>/deleteBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditBookServlet</servlet-name>
+        <servlet-class>cn.edu.swu.book.EditBookServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EditBookServlet</servlet-name>
+        <url-pattern>/editBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateBookServlet</servlet-name>
+        <servlet-class>cn.edu.swu.book.UpdateBookServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdateBookServlet</servlet-name>
+        <url-pattern>/updateBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchBookServlet</servlet-name>
+        <servlet-class>cn.edu.swu.book.SearchBookServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SearchBookServlet</servlet-name>
+        <url-pattern>/searchBook</url-pattern>
+    </servlet-mapping>
+
+
 
 
 </web-app>

@@ -37,8 +37,8 @@ public class AccessFilter extends HttpFilter {
             System.out.println("sendRedirect done");
         }
 
-        // 把请求传回过滤链, 把请求继续往后发送
-        chain.doFilter(request,response);
+//        // 把请求传回过滤链, 把请求继续往后发送
+//        chain.doFilter(request,response);
     }
 
 
